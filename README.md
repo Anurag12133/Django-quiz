@@ -23,6 +23,10 @@ python -m venv env
 source env/bin/activate  #linux/macos 
 env\Scripts\activate      #windows
 ```
+## Install django
+```
+pip install django
+```
 
 ## Run Database Migrations
 ```
