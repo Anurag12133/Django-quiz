@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Quiz Results</title>
+  </head>
+  <body>
+    <h1>Quiz Results</h1>
+    <p>Total Correct: {{ total_correct }} / {{ total_questions }}</p>
+    <ul>
+      <li>
+        <b>Question:</b> {{ result.question }}<br />
+        <b>Your Answer:</b> {{ result.your_answer }}<br />
+        <b>Correct Answer:</b> {{ result.correct_answer }}<br />
+
+        <span style="color: green">Correct</span>
+        ]
+        <span style="color: red">Incorrect</span>
+      </li>
+      <br />
+    </ul>
+    <a href="{% url 'home' %}"><button>Start New Quiz</button></a>
+  </body>
+</html>
